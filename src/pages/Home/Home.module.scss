@@ -1,0 +1,6 @@
+.grid {
+	@media (max-width: 768px) {
+		display: grid !important;
+		grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+	}
+}
