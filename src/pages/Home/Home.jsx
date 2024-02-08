@@ -1,5 +1,6 @@
 import fon from '../../assets/fon.png'
 import { BlockInfo } from '../../components/BlockInfo/BlockInfo'
+import { BlockInfoRoom } from '../../components/BlockInfoRoom/BlockInfoRoom'
 import { Card } from '../../components/Card/Card'
 import { Comment } from '../../components/Comment/Comment'
 import { Product } from '../../components/Product/Product'
@@ -25,11 +26,14 @@ const Home = () => {
 				</div>
 				<BlockInfo />
 			</section>
-			<section className='mt-[200px] px-7'>
+			<section className='mt-[200px] px-7 md:px-2'>
 				<Product />
 			</section>
-			<section className='mt-56 px-7'>
+			<section className='mt-56 px-7 md:px-2'>
 				<Comment />
+			</section>
+			<section className='w-full relative overflow-hidden mt-56 px-7 md:px-2 h-screen'>
+				<BlockInfoRoom/>
 			</section>
 		</main>
 	)

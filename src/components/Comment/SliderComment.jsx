@@ -11,16 +11,24 @@ export const SliderComment = () => {
 	return (
 		<Swiper
 			modules={[Navigation, Pagination, Scrollbar, A11y]}
-			slidesPerView={3}
+			slidesPerView={1}
 			pagination={{ clickable: true }}
 			breakpoints={{
+				1860: {
+					width: 1860,
+					slidesPerView: 3,
+				},
 				1024: {
-					width: 640,
-					slidesPerView: 1,
+					width: 1024,
+					slidesPerView: 2,
 				},
 				768: {
 					width: 768,
-					slidesPerView: 2,
+					slidesPerView: 1,
+				},
+				425: {
+					width: 425,
+					slidesPerView: 1,
 				},
 			}}
 		>

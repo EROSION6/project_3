@@ -16,7 +16,7 @@ const Navbar = () => {
 				</div>
 				<nav
 					className={`flex space-x-16 md:fixed md:flex-col top-0 left-0 md:w-full md:bg-[#959392] items-center md:space-x-0 md:space-y-5 md:py-3 transition-all duration-200 ease-linear ${
-						open ? 'md:top-0' : 'md:-top-[35%]'
+						open ? 'md:top-0' : 'md:-top-[50%]'
 					}`}
 				>
 					{navigation.map(link => (

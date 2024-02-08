@@ -8,8 +8,8 @@ export const BlockInfo = () => {
 	const [imagesOpen, setImageOpen] = useState(false)
 
 	return (
-		<div className='w-full mt-[200px] flex flex-row-reverse justify-between gap-16 overflow-hidden'>
-			<div className='w-[750px] xl:w-0'>
+		<div className='w-full mt-[200px] flex flex-row-reverse justify-between gap-16 overflow-hidden xl:gap-0'>
+			<div className='w-[750px]  xl:w-0'>
 				<img
 					src={foto}
 					alt='foto'

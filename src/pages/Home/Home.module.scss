@@ -4,3 +4,15 @@
 		grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 	}
 }
+
+.info {
+	@media (max-width: 425px) {
+		font-size: 12px !important;
+	}
+}
+
+.title {
+	@media (max-width: 425px) {
+		text-align: left !important;
+	}
+}
