@@ -14,13 +14,13 @@ export const BlockInfoRoom = () => {
 					src={foto}
 					alt='foto'
 					onClick={() => setImageRoomOpen(false)}
-					className={`w-[85%] lg:w-[85%]  transition-all duration-200 ease-out xl:absolute z-50 ${
+					className={`w-[85%] lg:w-[85%]  transition-all duration-200 ease-out xl:absolute z-10 ${
 						!imageRoomOpen ? '-left-[100%]' : '-left-[21%]'
 					}`}
 				/>
 				<button
 					onClick={() => setImageRoomOpen(!imageRoomOpen)}
-					className='hidden py-2 px-4 bg-[#564E4E] absolute left-0 top-[60%] z-40 xl:block'
+					className='hidden py-2 px-4 bg-[#564E4E] absolute left-0 top-[60%] z-10 xl:block'
 				>
 					<img src={arrow} alt='arrow' className='w-6 h-6' />
 				</button>

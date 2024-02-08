@@ -3,10 +3,13 @@ import burger from '../../assets/svg/burger.svg'
 import cart from '../../assets/svg/cart.svg'
 import cross from '../../assets/svg/cross.svg'
 import logo from '../../assets/svg/logo.svg'
+import { Cart } from '../Cart/Cart'
+
+const navigation = ['Furniture', 'Shop', 'About Us', 'Contact']
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false)
-	const navigation = ['Furniture', 'Shop', 'About Us', 'Contact']
+	const [cartOpen, setCartOpen] = useState(false)
 
 	return (
 		<div className='fixed z-50 h- w-full bg-[#959392] bg-opacity-35 border-b border-[#c4c4c44b]'>
@@ -36,7 +39,10 @@ const Navbar = () => {
 					</button>
 				</nav>
 				<div className='flex space-x-4 items-center'>
-					<button className='w-[30px] h-[30px]'>
+					<button
+						onClick={() => setCartOpen(!cartOpen)}
+						className='w-[30px] h-[30px]'
+					>
 						<img src={cart} alt='cart' />
 					</button>
 					<button
@@ -47,6 +53,7 @@ const Navbar = () => {
 					</button>
 				</div>
 			</header>
+			<Cart cartOpen={cartOpen} />
 		</div>
 	)
 }

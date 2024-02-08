@@ -13,3 +13,11 @@ body {
 	font-family: 'Poppins', sans-serif;
 	background: #fff;
 }
+
+:focus {
+	outline: none;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}

@@ -14,13 +14,13 @@ export const BlockInfo = () => {
 					src={foto}
 					alt='foto'
 					onClick={() => setImageOpen(false)}
-					className={`w-full h-[500px] transition-all duration-200 ease-out xl:absolute z-50 ${
+					className={`w-full h-[500px] transition-all duration-200 ease-out xl:absolute z-10 ${
 						!imagesOpen ? '-right-[100%]' : '-right-[21%]'
 					}`}
 				/>
 				<button
 					onClick={() => setImageOpen(!imagesOpen)}
-					className='hidden py-2 px-4 bg-[#564E4E] absolute right-0 top-[60%] z-40 xl:block'
+					className='hidden py-2 px-4 bg-[#564E4E] absolute right-0 top-[60%] z-10 xl:block'
 				>
 					<img src={arrow} alt='arrow' className='w-6 h-6' />
 				</button>

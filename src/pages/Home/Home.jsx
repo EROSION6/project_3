@@ -32,8 +32,8 @@ const Home = () => {
 			<section className='mt-56 px-7 md:px-2'>
 				<Comment />
 			</section>
-			<section className='w-full relative overflow-hidden mt-56 px-7 md:px-2 h-screen'>
-				<BlockInfoRoom/>
+			<section className='w-full relative overflow-hidden mt-56 px-7 md:px-2'>
+				<BlockInfoRoom />
 			</section>
 		</main>
 	)
