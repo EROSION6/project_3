@@ -32,8 +32,8 @@ export const SliderComment = () => {
 				},
 			}}
 		>
-			{comments.map(comment => (
-				<SwiperSlide key={comment.title}>
+			{comments.map((comment, i) => (
+				<SwiperSlide key={i}>
 					<CardComment {...comment} />
 				</SwiperSlide>
 			))}

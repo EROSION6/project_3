@@ -7,10 +7,10 @@ const legal = ['Privacy Policy', 'Terms of  Use']
 const social = ['Twitter', 'Product Hunt', 'Instagram', 'Github ']
 
 const lists = [
-	{ data: features, title: 'Features' },
-	{ data: support, title: 'Support' },
-	{ data: legal, title: 'Legal' },
-	{ data: social, title: 'Social' },
+	{ id: 1, data: features, title: 'Features' },
+	{ id: 2, data: support, title: 'Support' },
+	{ id: 3, data: legal, title: 'Legal' },
+	{ id: 4, data: social, title: 'Social' },
 ]
 
 export const Footer = () => {
@@ -26,7 +26,7 @@ export const Footer = () => {
 						ul='space-y-4'
 						titles='text-2xl text-[#FADCD9] font-[500] lg:text-xl'
 						links='text-lg text-white font-[400] cursor-pointer hover:translate-x-1 duration-300 ease-in-out lg:text-base'
-						key={list.title}
+						key={list.id}
 						title={list.title}
 						data={list.data}
 					/>

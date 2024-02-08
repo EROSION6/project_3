@@ -4,8 +4,8 @@ import product_2 from '../../assets/cardProduct/image 8.svg'
 import product_3 from '../../assets/cardProduct/image 9.svg'
 
 export const products = [
-	{ title: 'Product 1', image: product_1 },
-	{ title: 'Product 2', image: product_2 },
-	{ title: 'Product 3', image: product_3 },
-	{ title: 'Product 4', image: product_4 },
+	{ id: 1, title: 'Product 1', image: product_1 },
+	{ id: 2, title: 'Product 2', image: product_2 },
+	{ id: 3, title: 'Product 3', image: product_3 },
+	{ id: 4, title: 'Product 4', image: product_4 },
 ]
